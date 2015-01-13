@@ -1,0 +1,12 @@
+name: webhook
+version: 1
+
+libraries:
+- name: "django"
+  version: "1.4"
+
+cron:
+- description: check
+  url: /check
+  schedule: every 1 mins
+  timezone: Beijing
